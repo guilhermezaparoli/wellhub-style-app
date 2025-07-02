@@ -5,18 +5,18 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 
 
 export default defineConfig([
-  globalIgnores(["./build"]),
+  globalIgnores(['./build']),
   { files: ['**/*.{js,mjs,cjs,ts,mts,cts}'], plugins: { js }, extends: ['js/recommended'] },
   { files: ['**/*.{js,mjs,cjs,ts,mts,cts}'], languageOptions: { globals: globals.browser } },
   tseslint.configs.recommended,
   {
     rules: {
       'no-console': 'warn',
-      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       eqeqeq: ['error', 'always'],
       'no-return-await': 'error',
       'require-await': 'off',
-      'quotes': ["error", "single"]
+      'quotes': ['error', 'single'],
+      
     },
   },
 ]);
