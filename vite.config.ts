@@ -1,6 +1,17 @@
-import {defineConfig} from 'vitest/config'
+import { defineConfig } from 'vitest/config'
 
 
 export default defineConfig({
-    plugins: []
+    plugins: [],
+    test: {
+        projects: [
+        {
+                test: {
+                    name: 'prisma',
+                    include: ['src/http/controller/**/*.spec.ts'],
+                    environment: 'prisma'
+                }
+            }
+        ]
+    }
 })

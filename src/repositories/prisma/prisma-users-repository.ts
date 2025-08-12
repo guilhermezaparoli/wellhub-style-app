@@ -1,5 +1,5 @@
-import { Prisma, User } from 'generated/prisma/index.js';
-import { prisma } from 'src/lib/prisma.js';
+import { Prisma, User } from '.../../generated/prisma/index.js';
+import { prisma } from '../../lib/prisma.js';
 import { UsersRepository } from '../users-repository.js';
 
 export class PrismaUsersRepository implements UsersRepository {
