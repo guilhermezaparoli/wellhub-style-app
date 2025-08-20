@@ -10,6 +10,15 @@ export default defineConfig({
                     name: 'prisma',
                     include: ['src/http/controller/**/*.spec.ts'],
                     environment: 'prisma'
+                },
+                
+            },
+            {
+                
+                test: {
+                    name: 'default',
+                    include: ['src/use-cases/**/*.spec.ts'],
+                    environment: 'node'
                 }
             }
         ]
