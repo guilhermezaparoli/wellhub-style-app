@@ -14,7 +14,7 @@ app.register(fastifyJwt, {
 })
 app.register(usersRoutes)
 app.register(gymsRoutes)
-app.register(checkInsRoutes )
+app.register(checkInsRoutes)
 
 
 app.setErrorHandler((error, _, response) => {
