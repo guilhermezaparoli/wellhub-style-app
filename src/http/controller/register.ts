@@ -2,7 +2,7 @@ import { FastifyReply, FastifyRequest } from 'fastify';
 
 import { z } from 'zod';
 import { UserEmailAlreadyExistsError } from '../../use-cases/errors/user-email-already-exists-error.js';
-import { MakeRegisterUsecase } from 'src/use-cases/factories/make-register-use-case.js';
+import { MakeRegisterUsecase } from '../../../src/use-cases/factories/make-register-use-case.js';
 
 
 export async function register(req: FastifyRequest, res: FastifyReply) {
