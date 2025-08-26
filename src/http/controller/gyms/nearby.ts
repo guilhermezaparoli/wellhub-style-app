@@ -15,7 +15,7 @@ export async function nearby(req: FastifyRequest, res: FastifyReply) {
         }),
     })
 
-    const { userLatitude, userLongitude } = nearbyGymsQuerySchema.parse(req.body)
+    const { userLatitude, userLongitude } = nearbyGymsQuerySchema.parse(req.query)
 
     const createGymUseCase = makeFetchNearbyGymsUseCase()
 
