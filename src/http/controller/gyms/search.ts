@@ -11,7 +11,7 @@ export async function search(req: FastifyRequest, res: FastifyReply) {
         query: z.string()
     })
 
-    const { page, query } = searchGymsQuerySchema.parse(req.params)
+    const { page, query } = searchGymsQuerySchema.parse(req.query)
 
     const searchGymsUseCase = makeSearchGymsUseCase()
 
