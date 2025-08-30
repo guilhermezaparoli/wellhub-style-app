@@ -15,7 +15,7 @@ describe('Create check-in (e2e)', async () => {
 
     it('Should be able to create a check-in', async () => {
         const { createdCheckIn } = await createAGymAndACheckIn(app)
-
+console.log(createdCheckIn);
         expect(createdCheckIn.statusCode).toBe(201)
     })
 })
