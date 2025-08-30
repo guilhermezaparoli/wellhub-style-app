@@ -52,7 +52,7 @@ describe('Register Use Case', () => {
         const body = {
             email: 'guilhermezapas2@gmail.com',
             name: 'teste123',
-            password: '123'
+            password: '123',
         }
 
         await sut.execute(body)
